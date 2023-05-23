@@ -16,14 +16,26 @@
 
 h1, h2, h3 {
     font-family:Lora-MediumItalic;
+    
 }
 
 body{
     width: 100%;
-    background-color: #1a303c;
+    background-color: #000002;
 
 }
 
+
+.header__bg {
+	background: linear-gradient(
+			233.95deg,
+			#000002 -73.12%,
+			#000002 53.36%,
+			#1a303c 103.17%
+		),
+		#ffffff;
+	background-blend-mode: multiply, multiply, normal;
+}
 
 .navbar .collapse.navbar-collapse {
     flex-grow: inherit;
@@ -45,74 +57,45 @@ body{
     width: 250px;
     margin-left: 55px;
 }
-.hero-box{
-    background-image: url(../asset/imagen/tienda.jpg);
-    height: 1300px;
-    background-position: center;
-    background-size: cover;
-    padding: 50px;
-   
-}
-
-.hero-text{
-    margin-top: 15%;
-    background-color: rgba(255, 255, 255, 0.4)
-
-}
 
 .hero-box h1 {
-    font-size: 48px;
+    font-size: 60px;
     text-align: center;
     padding-top: 20px;
+    color: beige;
 }
 
 .hero-box p {
     font-size: 30px;
-    text-align: center;
     padding-bottom: 20px;
-
+    color: beige;
 
 }
-
-
-.about-contenedor {
-    padding: 45px;
-    width: 100%;
-    background-color: #000002;
-    color:aliceblue;
-   
+.header__img{
+    width: 220px;
 }
 
-.about-video {
-    
-    text-align: center;
+@media (min-width: 576px){
+    .header__img{
+        width: auto;
+        height: auto;
+        object-fit: cover;
+    }
 }
 
 
 
  .service {
     background-color: #000002;
-    grid-area: cartas;
+    
  }
 
 .service h2{
     text-align: center;
-    font-family: Lobster-Regular;
-    color: aliceblue;
+    color: beige;
     font-size: 48px;
     margin-bottom: 40px;
-}
-
-.service-container{
-    width: 1400px;
-    margin: 0 auto;
-}
-
-.cartas{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+    margin-top: 30px;
 }
 
 .card {
@@ -120,25 +103,36 @@ body{
     background-color:#c3390c;
     border-radius: 20px;
     display:inline-block;
-    
+    border-color: beige;
     
 }
-
 .card img {
     width: 100%;
-    border-radius: 20px 20px 0 0;
+    height: 100%;
+    border-radius: 20px 20px 0 0;   
 }
 
-
-
+.card h3{
+    text-align: center;
+    color: #000002;
+}
 .card p{
     text-align: center;
+    color: #000002;
+}
+<!---Tienda--->
+
+.zapatillas{
+    background-color: #000000;
+    padding: 40px 0px;
 }
 
-.service .service-container h3{
-    margin-left: 20px;
-   
+@media (min-width: 1024px){
+    .zapatillas{
+        padding: 80px 120px;
+    }
 }
+
 footer{
     
     padding: 10px;
@@ -148,53 +142,8 @@ footer{
 footer p {
     text-align: center;
     color: aliceblue;
-    margin-top: 70px;
-    
+    margin-top: 70px;   
 }
 
 
 
-.contact-container{
-
-    background-image: url(../imagen/contacto.jpg);
-    height: 50px;
-    background-position: center;
-    background-size: cover;
-    padding: 400px;
-    
-}
-
-.login-container {
-    background-image: url(../imagen/login.jpg);
-    height: 50px;
-    background-position: center;
-    background-size: cover;
-    padding: 400px;
-
-
-}
-
-.historia-container{
-    background-image: url(../imagen/siluetas.jpg);
-    height: 50px;
-    background-position: center;
-    background-size: cover;
-    padding: 400px;
-
-
-}
-
-.historia-text {
-    
-        
-    background-color: rgba(255, 255, 255, 0.4)
-        
-    
-}
-
-.historia-text p {
-
-    
-    text-align: center;
-    
-}

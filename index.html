@@ -11,24 +11,24 @@
 </head>
 <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-transparent">
+      <div class="header__bg">
+        <nav class="navbar navbar-expand-lg bg-transparent">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             <img class="mx-2" src="asset/imagen/logo.png" alt="logo">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
             aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <!-- <span class="navbar-toggler-icon"></span> -->
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#bcbcbc" class="bi bi-list"
               viewBox="0 0 16 16">
               <path fill-rule="evenodd"
                 d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
             </svg>
-          </button>>
+          </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="/index.html">NBA Store</a>
+                <a class="nav-link" href="index.html">NBA Store</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="pages/contacto.html">Contacto</a>
@@ -45,62 +45,70 @@
             </ul>
           </div>
         </div>
-      </nav>
+        </nav>
+      </div>
     </header>
-    <main>
-        <section class="hero-box">
-            <div class="hero-text">
+    <main>  
+      <div class="header__content container-fluid ">
+        <div class="row">
+          <div class="col-12 col-sm-6 d-flex flex-column justify-content-center">
+            <div class="hero-box">
+              <div class="hero-text">
                 <h1>NBA STORE | AR</h1>
                 <p> La mas completa coleccion de articulos de la NBA directo de USA en Argentina. En nuestro calido showroom vas a encontrar, ofertas y todo el espiritu del basquet, ademas de la mejor informacion sobre la liga estadounidense de baloncesto profesional.</p>
+              </div>
+            </div> 
+          </div>
+          <div class="col-12 col-sm-6 d-flex flex-column justify-content-center">
+            <img class="img-fluid header__img" src="asset/imagen/login.jpg" alt="imagen de zapatillas nike">
+          </div>
+        </div>   
+      </div>   
+        <!-----------------cartas-------------------->
+      <div class="container">
+        <div class="service"><h2>SENTITE PARTE DE LA NBA</h2></div>
+        <div class="row g-3">
+          <div class="col-12 col-md-5 col-lg-3">
+            <div class="card">
+              <a href="pages/tienda.html"><img src="asset/imagen/atardecer.jpg" alt="imagen de atardecer" class="card-img-top"></a>
+            <div class="card-body">
+              <h3 class="card-title">Contacto</h3>
+              <p class="card-text">Mandanos tu consulta para poder contactarte</p>
             </div>
-        </section>    
+          </div>
+        </div>
 
-        <section class="about-contenedor">
-            <article class="about-video">
-                <h2 class="mejores-jugadas">MEJORES JUGADAS</h2>
-                <p>Informate y disfruta de las mejores jugadas de tus jugadores favoritos e inspirate para mejorar tu juego en las canchas </p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/o1qpgYRNZSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </article> 
-
-        </section>
-        <section class="service">
-            <div class="service-container">
-                <h2>Nuestros Servicios</h2>
-                <div class="cartas">
-                    <article class="card">
-                    <a href="pages/historia.html"><img src="asset/imagen/login-2.jpg" alt="imagen pelota"></a>
-                        <div class="card-body">
-                        <h3>Historia</h3> 
-                        <p>NBA Store es una cadena de minoristas con licencia oficial que venden productos para la Asociación Nacional de Baloncesto (NBA). La más destacada de estas tiendas se encuentra en los Estados Unidos en la Quinta Avenida y la Calle 45, Manhattan, Ciudad de Nueva York. Hay otras siete ubicaciones fuera de los Estados Unidos: una en Sydney, Australia y Melbourne, Australia, Milán, Italia, dos en Beijing, China, una en Taipei, Taiwán, Londres, Inglaterra y tres en Metro Manila.</p>
-                        </div>
-                    </article>
-
-                    <article class="card">
-                    <a href="pages/tienda.html"><img src="asset/imagen/wilson.jpg" alt="wilson-pelota"></a>
-                        <div class="card-body">
-                        <h3>Tienda</h3> 
-                        <p>NBA Store es una cadena de minoristas con licencia oficial que venden productos para la Asociación Nacional de Baloncesto (NBA). La más destacada de estas tiendas se encuentra en los Estados Unidos en la Quinta Avenida y la Calle 45, Manhattan, Ciudad de Nueva York. Hay otras siete ubicaciones fuera de los Estados Unidos: una en Sydney, Australia y Melbourne, Australia, Milán, Italia, dos en Beijing, China, una en Taipei, Taiwán, Londres, Inglaterra y tres en Metro Manila.</p>
-                        </div>    
-                    </article>
-
-                    <article class="card">
-                        <a href="pages/contacto.html"><img src="asset/imagen/atardecer.jpg" alt="atardecer"></a>
-                        <div class="card-body">
-                        <h3>Contacto</h3> 
-                        <p>NBA Store es una cadena de minoristas con licencia oficial que venden productos para la Asociación Nacional de Baloncesto (NBA). La más destacada de estas tiendas se encuentra en los Estados Unidos en la Quinta Avenida y la Calle 45, Manhattan, Ciudad de Nueva York. Hay otras siete ubicaciones fuera de los Estados Unidos: una en Sydney, Australia y Melbourne, Australia, Milán, Italia, dos en Beijing, China, una en Taipei, Taiwán, Londres, Inglaterra y tres en Metro Manila.</p>
-                        </div>    
-                    </article>
-
-                    <article class="card">
-                        <a href="pages/liga.html"><img src="asset/imagen/pelota.jpg" alt="imagen pelota"></a>
-                        <div class="card-body">
-                        <h3>La Liga</h3> 
-                        <p>NBA Store es una cadena de minoristas con licencia oficial que venden productos para la Asociación Nacional de Baloncesto (NBA). La más destacada de estas tiendas se encuentra en los Estados Unidos en la Quinta Avenida y la Calle 45, Manhattan, Ciudad de Nueva York. Hay otras siete ubicaciones fuera de los Estados Unidos: una en Sydney, Australia y Melbourne, Australia, Milán, Italia, dos en Beijing, China, una en Taipei, Taiwán, Londres, Inglaterra y tres en Metro Manila.</p>
-                        </div>    
-                    </article>
-                </div> 
+        <div class="col-12 col-md-5 col-lg-3">
+          <div class="card">
+            <a href="pages/tienda.html"><img src="asset/imagen/login-2.jpg" alt="imagen de atardecer" class="card-img-top"></a>
+            <div class="card-body">
+              <h3 class="card-title">Historia</h3>
+              <p class="card-text">Te contamos los origenes del basquet ball y de la NBA</p>
             </div>
-        </section>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-5 col-lg-3">
+          <div class="card">
+            <a href="pages/tienda.html"><img src="asset/imagen/pelota.jpg" alt="imagen de atardecer" class="card-img-top"></a>
+            <div class="card-body">
+              <h3 class="card-title">La Liga</h3>
+              <p class="card-text">Resultados, estadisticas y el MVP de la NBA</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-5 col-lg-3">
+          <div class="card">
+            <a href="pages/tienda.html"><img src="asset/imagen/wilson.jpg" alt="imagen de atardecer" class="card-img-top"></a>
+            <div class="card-body">
+              <h3 class="card-title">Tienda</h3>
+              <p class="card-text">Todos los articulos de la linea AIR de Nike</p>
+            </div>
+          </div>
+        </div>
+       </div> 
+      </div>    
     </main>
     <footer>
         <p>Donde nos encontramos<br>Av. Nicaragua N°5176 - CABA<br>&copy; 2023 NBA Store | Argentina-Todos los derechos reservados</p>º
